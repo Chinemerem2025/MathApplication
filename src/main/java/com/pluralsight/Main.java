@@ -4,37 +4,25 @@ package com.pluralsight;
 public class Main {
     public static void main(String[] args) {
 
-        double chinemeremSalary = 2500.00; // declare variables here
-        double philipSalary = 5000.00; // declare variables here
-
-        double highestSalary = Math.max ( chinemeremSalary, philipSalary);// then the solution
-
-        System.out.println( "     Lest Check");
-        System.out.println( "chinemerem Salary: $" + philipSalary);
-        System.out.println( "philip Salary: $" + chinemeremSalary );
-        System.out.println( "The highest Salary is: $" + highestSalary);
-
+        //variables
+        double bobSalary = 2500.00;
+        double garySalary = 5000.00;
         double carPrice = 1000.00;
         double truckPrice = 2000;
 
-        double lowestPrice = Math.min( carPrice, truckPrice);
+        // To find the highest Salary
+        double highestSalary = Math.max(bobSalary,garySalary); //Code solution
+        System.out.println("The highest salary is:" + highestSalary); // Output
+        System.out.println(); // to jump a new line before the next question
 
-        System.out.println("      Next! ");
-        System.out.println("Car Price: $ " + carPrice);
-        System.out.println("Truck Price: $ " + truckPrice);
-        System.out.println( "The lowest price is: $ " + lowestPrice);
+        //To find the smallest value
+        double lowestValue = Math.min(carPrice, truckPrice); //Code solution
+        System.out.println("The lowestValue is:" + lowestValue); //output
 
-
-        double randomNumber = Math.random();
-
-        System.out.println( "    Random Number" );
-
-        System.out.println("""
-                Random number between 0 and 1: """ + randomNumber);
+        // To generate a random number between 0 and 1
+        double randomNumber = Math.random(); // code Solution
+        System.out.println( "Random Number \nRandom number between 0 and 1: " + randomNumber);
 
 
-
-
-        System.out.println("Any more Question");
     }
 }
